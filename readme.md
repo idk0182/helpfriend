@@ -24,32 +24,38 @@ git log - список происходящего
 
 ###Связка удалённого проекта с локальным
 
-'''git remote add
+'''bash
+git remote add
 ''' 
 (добавление удалённого пространства(репозитория))<br>
-'''$ cd ~/dev/first-project 
+'''bash
+$ cd ~/dev/first-project 
 $ git remote add origin git@github.com:idk0182/first-project.git
 '''
 (строки для привязки репозиториев(проектов))<br>
-'''git remote -v
+'''bash
+git remote -v
 ''' 
 для проверки работы
 
 ##Синхронизация репозиториев
-
-'''git push -u origin main
+'''bash
+git push -u origin main
 ''' 
 (отправка изменений(потом можно убрать часть после push))
 
 ###Создание ssh-ключей и перенос на GitHub
 
-'''ls -la .ssh/
+'''bash
+ls -la .ssh/
 ''' 
 (вывод ключей в виде файлов)<br>
-'''ssh-keygen -t ed25519 -C"электронная почта"
+'''bash
+ssh-keygen -t ed25519 -C"электронная почта"
 '''
 (создание самих ключей)<br>
-'''rm -rf ~/.ssh
+'''bash
+rm -rf ~/.ssh
 '''
 (Удаление ключей(в случае бага))
 
@@ -67,6 +73,8 @@ $ git remote add origin git@github.com:idk0182/first-project.git
 ### Заголовок третьего уровня
 ## Выделение кода
 Чтобы выделить текст как код, поместите его в тройные кавычки `````. 
-``` mkdir my_project cd my_project git init ```
+'''bash
+mkdir my_project cd my_project git init 
+```
 Это лишь некоторые функции markdown.
 
